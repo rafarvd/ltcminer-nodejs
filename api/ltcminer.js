@@ -63,7 +63,7 @@ const ltcminer = async (login, senha, wallet) => {
       return await response.json();
     }, wallet);
 
-    console.log("Withdrawal response:", withdrawalResponse);
+    console.log(withdrawalResponse);
 
     return true;
   } catch (error) {

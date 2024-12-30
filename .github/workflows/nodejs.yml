@@ -48,4 +48,5 @@ jobs:
           LOGIN_LTCMINER: ${{ secrets.LOGIN_LTCMINER }}
           PASSWORD_LTCMINER: ${{ secrets.PASSWORD_LTCMINER }}
           LTC_ADDRESS: ${{ secrets.LTC_ADDRESS }}
-        run: node index.js
+        run: xvfb-run --auto-servernum -- node --trace-warnings index.js
+
